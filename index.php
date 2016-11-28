@@ -1,7 +1,8 @@
 <?php
-  include("header.php");
+include("header.php");
 
 session_start();
+
 if (isset($_POST['submit'])) {
   $name = $_POST['email'];
     if (isset($_POST['email']) && (isset($_POST['password']))) {
@@ -52,7 +53,7 @@ if (isset($_POST['submit'])) {
                 $answerMsg = "<h5 class=\"correct\">CORRECT</h5>";
               } elseif($_POST['answer'] != $_SESSION['answer-value']) {
                 $_SESSION['total']++;
-                $answerMsg = "<h5 class=\"incorrect\">INCORRECT. The answer is " . $_POST['answer'] . "</h5>";
+                $answerMsg = "<h5 class=\"incorrect\">INCORRECT. The answer is " . $_SESSION['answer-value'] . "</h5>";
               }
             }
           }
