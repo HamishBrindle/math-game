@@ -1,0 +1,30 @@
+.error-msg {
+  color: rgb(233, 69, 69);
+}
+input {
+  margin: 2em 0 2em 0;
+}
+nav {
+  margin-bottom: 2em;
+}
+.left-value {
+  margin-right: 2em;
+}
+.operator {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.right-value {
+  margin-left: 2em;
+}
+
+.hr-small {
+  width: 100%;
+  max-width: 10em;
+}
+.correct {
+  color: rgb(41, 164, 76);
+}
+.incorrect {
+  color: rgb(233, 69, 69);
+}
