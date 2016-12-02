@@ -3,7 +3,7 @@ include("include/header.php");
 
 session_start();
 
-if (isset($_POST['submit'])) {
+if (isset($_SESSION['submit'])) {
   $name = $_POST['email'];
     if (isset($_POST['email']) && (isset($_POST['password']))) {
       if ($_POST['email'] != 'a@a.a' || $_POST['password'] != "aaa") {
@@ -12,9 +12,6 @@ if (isset($_POST['submit'])) {
            die();
        }
    }
-} else {
-  header("Location: login.php");
-  die();
 }
 
 ?>
