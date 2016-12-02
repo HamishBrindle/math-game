@@ -4,6 +4,7 @@ include("include/header.php");
 session_start();
 
 if (isset($_POST['submit'])) {
+  $_SESSION['email'] = $_POST['email'];
   $name = $_POST['email'];
     if (isset($_POST['email']) && (isset($_POST['password']))) {
       if ($_POST['email'] != 'a@a.a' || $_POST['password'] != "aaa") {
@@ -12,6 +13,9 @@ if (isset($_POST['submit'])) {
            die();
        }
    }
+} elseif (!isset($_SESSION['email'])) {
+  header("Location: login.php?msg=$loginErr");
+  die();
 }
 
 ?>
