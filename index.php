@@ -1,5 +1,5 @@
 <?php
-include("header.php");
+include("include/header.php");
 
 session_start();
 
@@ -12,6 +12,9 @@ if (isset($_POST['submit'])) {
            die();
        }
    }
+} else {
+  header("Location: login.php");
+  die();
 }
 
 ?>
@@ -114,4 +117,4 @@ if (isset($_POST['submit'])) {
 
 </main>
 
-<?php include("footer.php"); ?>
+<?php include("include/footer.php"); ?>

@@ -1,6 +1,6 @@
 <?php
   session_start();
-  include("header.php");
+  include("include/header.php");
 ?>
 
   <main>
@@ -51,4 +51,4 @@
       </div>
     </div>
 
-<?php include("footer.php"); ?>
+<?php include("include/footer.php"); ?>
