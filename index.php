@@ -3,7 +3,7 @@ include("include/header.php");
 
 session_start();
 
-if (isset($_PUSH['submit'])) {
+if (isset($_POST['submit'])) {
   $name = $_POST['email'];
     if (isset($_POST['email']) && (isset($_POST['password']))) {
       if ($_POST['email'] != 'a@a.a' || $_POST['password'] != "aaa") {
