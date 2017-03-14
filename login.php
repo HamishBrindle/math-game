@@ -9,6 +9,7 @@
         <div class="col-xs-6 col-xs-offset-3">
           <h1>Login</h1>
           <h3>Enjoy our Math Game!</h3>
+          <p style="color: rgb(251, 81, 75);">Use account <b>a@a.a</b> and password <b>aaa</b> to login!</p>
           <div class="container">
 
           </div>

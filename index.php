@@ -1,7 +1,7 @@
 <?php
+session_start();
 include("include/header.php");
 
-session_start();
 
 if (isset($_POST['submit'])) {
   $_SESSION['email'] = $_POST['email'];
